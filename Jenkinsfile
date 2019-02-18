@@ -1,7 +1,5 @@
 
 node('windows-slave') {
-    stage 'Checkout'
-        bat 'git clone https://github.com/MerrilCode/sample-net-app.git'
 
     stage 'Build'
         bat 'nuget restore helloworld.sln'
