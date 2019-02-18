@@ -1,12 +1,8 @@
 
 node('windows-slave') {
     stage('Checkout external proj') {
-        steps{
-            git branch: 'master',
-                url: 'https://github.com/MerrilCode/sample-net-app.git'
-        
-
-        }
+        git branch: 'master',
+        url: 'https://github.com/MerrilCode/sample-net-app.git'
     }
 
     stage 'Build'
